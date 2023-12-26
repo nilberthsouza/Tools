@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificar Tecla Pressionada</title>
+</head>
+<body>
+
+<script>
+    document.addEventListener('keydown', function(event) {
+        // Obtém o código da tecla pressionada
+        var keyCode = event.keyCode;
+
+        // Obtém o caractere associado ao código da tecla
+        var keyChar = String.fromCharCode(keyCode);
+
+        // Exibe as informações na tela
+        document.getElementById('info').innerHTML = 'Tecla Pressionada: ' + keyChar + ' (Código: ' + keyCode + ')';
+    });
+</script>
+
+<div id="info"></div>
+
+</body>
+</html>
